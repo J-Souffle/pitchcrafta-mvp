@@ -1,0 +1,162 @@
+/* Basic styling for navbar */
+.navbar {
+  background-color: #ffffff; /* White background for navbar */
+  border-bottom: 1px solid #e5e5e5; /* Subtle border at the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for subtle depth */
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.navbarBrand {
+  font-size: 1.5rem; /* Larger font size for the brand */
+  font-weight: 700; /* Bold font weight */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbarCollapse {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbarNav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: left; /* Distribute space evenly */
+}
+
+.navItem {
+  position: relative;
+  margin-right: 1rem; /* Add space between nav items */
+}
+
+.navLink {
+  display: block;
+  padding: 0.75rem 1.25rem; /* Adjust padding for links */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Standard font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: #a233c1; /* Change text color on hover/focus */
+}
+
+.navLinkSeparate {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.navLinkSeparate:hover,
+.navLinkSeparate:focus {
+  background-color: #f0f0f0;
+  color: #a233c1; /* Consistent hover color */
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 0.25rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  padding: 0.5rem 0;
+  list-style: none;
+  margin: 0;
+  z-index: 1000; /* Ensure dropdown is on top */
+  width: max-content; /* Adjust width based on content */
+}
+
+.dropdownMenu.show {
+  display: block;
+}
+
+.dropdownItem {
+  padding: 0.75rem 1.25rem; /* Padding for dropdown items */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdownItem:hover,
+.dropdownItem:focus {
+  background-color: #f0f0f0; /* Light background on hover/focus */
+}
+
+.formInline {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.inputGroupPrepend {
+  margin-right: -1px; /* Remove space between button and input */
+}
+
+.btnOutlineSecondary {
+  border: none;
+  color: #333; /* Dark text color */
+  background-color: transparent; /* Transparent background */
+  padding: 0.5rem; /* Padding for button */
+  border-radius: 0.25rem; /* Rounded corners */
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  margin-top: 5px;
+}
+
+.btnOutlineSecondary:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+}
+
+.formControl {
+  padding: 0.5rem 0.75rem; /* Adjust padding */
+  border-radius: 10.25rem; /* Rounded corners */
+  border: 1px solid #000000; /* Border color */
+  margin-top: 5px;
+}
+
+.navItem .navLink svg {
+  vertical-align: middle; /* Center icon vertically */
+  margin-right: 0rem; /* Adjust spacing if needed */
+}
+
+.navbarNav .navItem:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.navbarNav.mlAuto {
+  margin-left: auto; /* Align items to the right */
+}
+
+.navLinkSeparate.dropdownToggle {
+  border: none; 
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+}
+
+.navLinkSeparate.dropdownToggle:hover {
+  background-color: #f0f0f0;
+}

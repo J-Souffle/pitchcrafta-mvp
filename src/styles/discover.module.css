@@ -1,0 +1,23 @@
+.card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards to the next line if they don't fit in one line */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Optional: Adds padding around the card container */
+  }
+
+  .sub-header {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    gap: 8px; /* Space between items */
+  }
+  
+  .sub-header h2 {
+    margin: 0; /* Remove default margin from h2 */
+    color: black;
+  }
+  
+  .sub-header svg {
+    font-size: 24px; /* Adjust icon size */
+  }
+  
+  
